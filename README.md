@@ -1,2 +1,2 @@
-# static-config
-Static config files for my other repos
+# static
+Static files for my other repos
