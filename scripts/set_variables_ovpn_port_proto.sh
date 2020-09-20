@@ -1,13 +1,5 @@
 #!/bin/bash
 
-### Kill of ovpn not found ###
-if [[ -f "/etc/openvpn/openvpn.ovpn" ]]; then
-	  echo '[info] Config file detected...'
-else
-    echo '[CRITICAL] Config file not found, quitting...'
-    kill -9 1
-fi
-
 ### Dynamically determine OpenVPN port and protocol ###
 echo '[info] Determine openvpn port from config file'
 OPENVPN_PORT=$(grep -m 1 "remote " /etc/openvpn/openvpn.ovpn) ; OPENVPN_PORT="$(echo $OPENVPN_PORT | sed 's/ /   /g')" ; OPENVPN_PORT=${OPENVPN_PORT:(-5)} ; OPENVPN_PORT="$(echo $OPENVPN_PORT | sed 's/ //g')" ; OPENVPN_PORT="$(echo $OPENVPN_PORT | sed 's/[^0-9]*//g')"
