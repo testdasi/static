@@ -9,7 +9,7 @@
   "OmdbApiKey": "",
   "OmdbApiUrl": "",
   "ProxyType": 2,
-  "ProxyUrl": "127.0.0.1",
+  "ProxyUrl": "localhost",
   "ProxyPort": 1080,
   "ProxyUsername": "",
   "ProxyPassword": "",
