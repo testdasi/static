@@ -2,7 +2,7 @@
   "Port": 9117,
   "AllowExternal": true,
   "AdminPassword": null,
-  "BlackholeDir": "/data/rtorrent/watch",
+  "BlackholeDir": "/data/transmission/watch",
   "UpdateDisabled": false,
   "UpdatePrerelease": false,
   "BasePathOverride": "",
